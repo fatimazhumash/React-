@@ -1,0 +1,17 @@
+  function updateCart() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            cartItemsContainer.innerHTML = '';
+            let total = 0;
+            cart.forEach(item => {
+                const cartItem = document.createElement('div');
+                cartItem.classList.add('cart-item');
+                cartItem.innerHTML = `
+                    <span>${item.product.name} x${item.quantity}</span>
+                    <span>${item.product.price * item.quantity} ₸</span>
+                    <button onclick="removeFromCart(${item.product.id})">Удалить</button>
+                `;
+                cartItemsContainer.appendChild(cartItem);
+                total += item.product.price * item.quantity;
+            });
+            document.getElementById('total-amount').textContent = total;
+        }

@@ -1,0 +1,88 @@
+body{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(164, 218, 200);
+}
+.product-card{
+ text-align: center;
+  padding:20 ;
+  width: 350px;
+  height: 300px;
+  background-color: rgb(82, 138, 119);
+  font-size: 15px;
+  border-radius: 10px;
+  
+}
+
+.product-card:hover{
+  background-color: rgb(10, 163, 163);
+  transition: 2s;
+  scale: 1.3;
+
+
+}
+.class2{
+  margin: 20px;
+  display: flex;
+  gap: 50px;
+}
+@media (max-width: 768px) {
+      .laptop,.phone,.tv {
+        flex-direction: row;
+        align-items: flex-start;
+      }}
+     
+      .image1{
+        height:90px;
+        width:100px ;
+        border-radius: 10px;
+        
+      }
+
+      .image1:hover{
+ transition: 2s;
+ scale: 2;
+ 
+      }
+      .name1:hover,.price1:hover{
+        transition: 2s;
+ scale: 1.3;
+      }
+      
+
+
+
+      
+      
+
+h1{
+  text-align: center;
+}
+
+      .book-card1 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.book-card {
+  background-color: orange;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+  background-color: darkorange; 
+}
+
+.book-cover {
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
