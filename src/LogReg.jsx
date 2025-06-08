@@ -13,6 +13,7 @@ function LogReg() {
     );
   } else if (page === "login") {
     return (
+      
       <div className="container">
         <h2>Welcome to login page</h2>
         <button onClick={() => setPage("first-page")}>Back</button>

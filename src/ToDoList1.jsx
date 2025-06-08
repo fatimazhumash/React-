@@ -45,6 +45,7 @@ function ToDoList1() {
   const removeTask = (index) => {
     setTasks(tasks.filter((_, i) => i !== index));
   };
+  
 
   const filteredTasks = tasks.filter((task) => {
     if (filter === "completed") return task.completed;

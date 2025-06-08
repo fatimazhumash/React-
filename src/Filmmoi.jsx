@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./Filmmoi.css";
 
 export default function Filmmoi() {
   const [movies, setMovies] = useState([]);
@@ -25,7 +25,7 @@ export default function Filmmoi() {
 
   return (
     <div className="filmmoi">
-      <h2>Жаңа фильм қосу</h2>
+      <h1>Film Moi</h1>
       <input
         type="text"
         name="title"
@@ -33,14 +33,14 @@ export default function Filmmoi() {
         value={form.title}
         onChange={handleChange}
       />
-      <input
+      <input 
         type="text"
         name="description"
         placeholder="Сипаттамасы"
         value={form.description}
         onChange={handleChange}
       />
-      <input
+      <input 
         type="text"
         name="poster"
         placeholder="Постер URL"
@@ -53,8 +53,8 @@ export default function Filmmoi() {
       <ul>
         {movies.map((movie, index) => (
           <li key={index}>
-            <h4>{movie.title}</h4>
-            <p>{movie.description}</p>
+            <h4  >{movie.title}</h4>
+             <p >{movie.description}</p>
             <img src={movie.poster} alt={movie.title} width="150" />
           </li>
         ))}
@@ -62,4 +62,3 @@ export default function Filmmoi() {
     </div>
   );
 }
-3
