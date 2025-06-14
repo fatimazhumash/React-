@@ -5,10 +5,10 @@ function FeedbackList({form, feed}){
 
 return(<div>
     
-      {feed.map((item, index) => (
+      {feed.map((feeds, index) => (
         <div key={index}>
-          <p><strong>{item.name}</strong> ({item.subject}) score: {item.rating}/5</p>
-          <p>{item.description}</p>
+          <p><strong>{feeds.name}</strong> ({ffeds.subject}) score: {feeds.rating}/5</p>
+          <p>{feed.description}</p>
         </div>
       ))}
     </div>

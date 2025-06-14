@@ -96,16 +96,16 @@ function FeedbackForm() {
 
      
       <div style={{ width: '400px', margin: '',border:'15px' ,borderColor:'black'}}>
-        {feed.map((e) => (
-          <div key={e.id}
+        {feed.map((feeds,index) => (
+          <div key={index}
             style={{
               padding: '10px',
             }}>
-            <h3>{e.name}</h3>
-            <p> {e.subject}</p>
-            <p> {e.description}</p>
-            <p>{e.rating}</p>
-            <button onClick={() => removeFeedback(e.id)}
+            <h3>{feeds.name}</h3>
+            <p> {feeds.subject}</p>
+            <p> {feeds.description}</p>
+            <p>{feeds.rating}</p>
+            <button onClick={() => removeFeedback(feeds.id )}
             style={{  background: 'red',
                 color: 'white',
                 padding: '6px 12px',
